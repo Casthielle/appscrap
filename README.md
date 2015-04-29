@@ -1,4 +1,4 @@
-# SCRAPY
+# APPSCRAP
 App python to extract account balance and transactions from banks. It's a fork of Ruby gem bank_scrap made by diacode.
 
 
@@ -26,12 +26,12 @@ We are developers and we do not want to waste time doing things that are able to
 
 You can check out the latest source from git:
 
-    git clone https://github.com/Casthielle/SCRAPY.git
+    git clone https://github.com/Casthielle/appscrap.git
 
 
 ## Requirements
 
-To perform operations on the BBVA bank, you need to add the details of your code card on file ' /src/scrapy.py ' in codecard variable. For example:
+To perform operations on the BBVA bank, you need to add the details of your code card on file ' /src/appscrap.py ' in codecard variable. For example:
 
 And get its balance:
 ```python
@@ -54,20 +54,20 @@ codecard = {
 
 ###### BBVA | Mercantil
 
-    $ python scrapy.py YOUR_BANK balance --user YOUR_BANK_USER --password YOUR_BANK_PASSWORD
+    $ python appscrap.py YOUR_BANK balance --user YOUR_BANK_USER --password YOUR_BANK_PASSWORD
 
 or
 
-	$ python scrapy.py YOUR_BANK balance -u YOUR_BANK_USER -p YOUR_BANK_PASSWORD
+	$ python appscrap.py YOUR_BANK balance -u YOUR_BANK_USER -p YOUR_BANK_PASSWORD
 
 #### Last Transactions
 ###### BBVA | Mercantil
 
-    $ python scrapy.py YOUR_BANK transactions --user YOUR_BANK_USER --password YOUR_BANK_PASSWORD
+    $ python appscrap.py YOUR_BANK transactions --user YOUR_BANK_USER --password YOUR_BANK_PASSWORD
 
 or
 
-	$ python scrapy.py YOUR_BANK transactions -u YOUR_BANK_USER -p YOUR_BANK_PASSWORD
+	$ python appscrap.py YOUR_BANK transactions -u YOUR_BANK_USER -p YOUR_BANK_PASSWORD
 
 
 If you don't want to pass your user and password everytime you can define them in your .bash_profile by adding:
@@ -78,7 +78,7 @@ If you don't want to pass your user and password everytime you can define them i
 
 ## Contributing
 
-1. Fork it ( https://github.com/SCRAPY/SCRAPY/fork )
+1. Fork it ( https://github.com/Casthielle/appscrap/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)

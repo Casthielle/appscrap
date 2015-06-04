@@ -9,7 +9,7 @@ Python App para extraer saldo de la cuenta y las transacciones de los bancos. Es
 | Saldo de Cuenta |    ✓   |      ✓      |
 | Transacciones   |    ✓   |      ✓      |
 
-Interesado en cualquier otro banco? Abre un nuevo problema y vamos a tratar de ayudar.
+¿Interesado en cualquier otro banco? Abre un nuevo problema y vamos a tratar de ayudar.
 
 
 ## Antecedentes y motivación

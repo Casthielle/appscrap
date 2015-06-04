@@ -2,20 +2,8 @@
 import httplib, urllib, json, pg, time
 from BeautifulSoup import BeautifulSoup
 
-
-
-
-
-
-
-
-
 # BBVA Provincial
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-
-
 
 class bbva(object):
 	def __init__(self, card, passwd):
@@ -133,30 +121,8 @@ class bbva(object):
 		self.connect.close()
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Banco Mercantil
 #--------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-
-
 
 class mercantil(object):
 	def __init__(self, card, passwd):

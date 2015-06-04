@@ -1,39 +1,37 @@
 # APPSCRAP
-App python to extract account balance and transactions from banks. It's a fork of Ruby gem bank_scrap made by diacode.
+Python App para extraer saldo de la cuenta y las transacciones de los bancos. Es un fork de la jema Rubí bank_scrap hecha por diacode.
+
+## Bancos compatibles
 
 
-## Supported banks
-
-
-| Operations      |  BBVA  |  Mercantil  |
+| Operaciones     |  BBVA  |  Mercantil  |
 |-----------------|:------:|:-----------:|
-| Account Balance |    ✓   |      ✓      |
-|  Transactions   |    ✓   |      ✓      |
+| Saldo de Cuenta |    ✓   |      ✓      |
+| Transacciones   |    ✓   |      ✓      |
 
-Interested in any other bank? Open a new Issue and we'll try to help.
-
-
-## Background and motivation
-
-Most banks do not offer public APIs and the only way to access your data (balance and transactions) is through their websites ... and most of the websites of banks are a nightmare.
-
-We are developers and we do not want to waste time doing things that are able to automate. Having to make 20 clicks in a horrible site just to check the amount of money we have is not something we like.
+Interesado en cualquier otro banco? Abre un nuevo problema y vamos a tratar de ayudar.
 
 
-## Installation
+## Antecedentes y motivación
+La mayoría de los bancos no ofrecen APIs públicas y la única manera de acceder a sus datos (saldo y transacciones) es a través de sus sitios web ... y la mayoría de los sitios web de los bancos son una pesadilla.
 
-### From Git
+Somos desarrolladores y no queremos perder el tiempo haciendo cosas que son capaces de automatizar. Tener que hacer 20 clics en un sitio horrible, sólo para comprobar la cantidad de dinero que tenemos no es algo que nos gusta.
 
-You can check out the latest source from git:
+
+## Instalación
+
+### de Git
+
+Puedes comprobar la última versión en git de la siguiente manera:
 
     git clone https://github.com/Casthielle/appscrap.git
 
 
-## Requirements
+## Requisitos
+Para realizar operaciones en el banco BBVA, es necesario agregar los detalles de su tarjeta de claves en el archivo '/src/appscrap.py' en la variable codecard. Por ejemplo:
 
-To perform operations on the BBVA bank, you need to add the details of your code card on file ' /src/appscrap.py ' in codecard variable. For example:
+Para conseguir su balance:
 
-And get its balance:
 ```python
 codecard = {
 			"A1":"106", "A2":"745", "A3":"078", "A4":"584", "A5":"396", "A6":"818", "A7":"537", "A8":"577", "A9":"184", "A10":"380",
@@ -47,10 +45,10 @@ codecard = {
 		}
 ```
 
-## Usage
+## Uso
 
-### From terminal
-#### Bank account balance
+### en el terminal
+#### Saldo de la cuenta bancaria
 
 ###### BBVA | Mercantil
 
@@ -60,7 +58,7 @@ or
 
 	$ python appscrap.py YOUR_BANK balance -u YOUR_BANK_USER -p YOUR_BANK_PASSWORD
 
-#### Last Transactions
+#### Últimas Transacciones
 ###### BBVA | Mercantil
 
     $ python appscrap.py YOUR_BANK transactions --user YOUR_BANK_USER --password YOUR_BANK_PASSWORD
@@ -70,21 +68,21 @@ or
 	$ python appscrap.py YOUR_BANK transactions -u YOUR_BANK_USER -p YOUR_BANK_PASSWORD
 
 
-If you don't want to pass your user and password everytime you can define them in your .bash_profile by adding:
+Si usted no desea pasar su usuario y contraseña cada vez, puede definirlo en tu .bash_profile, añadiendo:
 
-    export SUSER=YOUR_BANK_USER
-    export SPASSWORD=YOUR_BANK_PASSWORD
+    export SUSER= TU_USUARIO_EN_EL_BANCO
+    export SPASSWORD=TU_CLAVE_EN_EL_BANCO
 
 
-## Contributing
+## Para hacer tu contribución
 
-1. Fork it ( https://github.com/Casthielle/appscrap/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+1. Fork  ( https://github.com/Casthielle/appscrap/fork )
+2. Cree su rama de la característica (`git checkout -b my-new-feature`)
+3. Comenta y Compromete tus cambios (`git commit -am 'Add some feature'`)
+4. Sube la rama (`git push origin my-new-feature`)
+5. Crea un new Pull Request
 
-## Thanks
+## Gracias
 
-Thanks to Javier Cuevas (@javiercr) and Diacode for his bank_scrap gem.
-And Thanks also to madrid.rb and codersvenezuela.com
+Gracias a Javier Cuevas (javiercr) y Diacode para su joya bank_scrap.
+Y gracias también a madrid.rb y codersvenezuela.com

@@ -87,7 +87,9 @@ Si usted no desea pasar su usuario y contraseña cada vez, puede definirlo en tu
 Gracias a Javier Cuevas (javiercr) y Diacode para su joya bank_scrap.
 Y gracias también a madrid.rb y codersvenezuela.com
 
-#IN ENGLISH
+
+# _
+# IN ENGLISH
 # APPSCRAP
 App python to extract account balance and transactions from banks. It's a fork of Ruby gem bank_scrap made by diacode.
 
@@ -116,9 +118,8 @@ We are developers and we do not want to waste time doing things that are able to
 
 You can check out the latest source from git:
 
- git clone https://github.com/Casthielle/appscrap.git
-
-
+	git clone https://github.com/Casthielle/appscrap.git
+	
 ## Requirements
 
 To perform operations on the BBVA bank, you need to add the details of your code card on file ' /src/appscrap.py ' in codecard variable. For example:
@@ -144,28 +145,32 @@ codecard = {
 
 ###### BBVA | Mercantil
 
- $ python appscrap.py YOUR_BANK balance --user YOUR_BANK_USER --password YOUR_BANK_PASSWORD
 
+	$ python appscrap.py YOUR_BANK balance --user YOUR_BANK_USER --password YOUR_BANK_PASSWORD
+	
 or
 
- $ python appscrap.py YOUR_BANK balance -u YOUR_BANK_USER -p YOUR_BANK_PASSWORD
+	$ python appscrap.py YOUR_BANK balance -u YOUR_BANK_USER -p YOUR_BANK_PASSWORD
+	
 
 #### Last Transactions
 ###### BBVA | Mercantil
 
- $ python appscrap.py YOUR_BANK transactions --user YOUR_BANK_USER --password YOUR_BANK_PASSWORD
 
+	$ python appscrap.py YOUR_BANK transactions --user YOUR_BANK_USER --password YOUR_BANK_PASSWORD
+	
 or
 
- $ python appscrap.py YOUR_BANK transactions -u YOUR_BANK_USER -p YOUR_BANK_PASSWORD
 
-
+	$ python appscrap.py YOUR_BANK transactions -u YOUR_BANK_USER -p YOUR_BANK_PASSWORD
+	
+	
 If you don't want to pass your user and password everytime you can define them in your .bash_profile by adding:
 
- export SUSER=YOUR_BANK_USER
- export SPASSWORD=YOUR_BANK_PASSWORD
-
-
+	export SUSER=YOUR_BANK_USER
+	export SPASSWORD=YOUR_BANK_PASSWORD
+	
+	
 ## Contributing
 
 1. Fork it ( https://github.com/Casthielle/appscrap/fork )
